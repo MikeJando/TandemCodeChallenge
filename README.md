@@ -14,6 +14,8 @@ This project uses the JSON Simple library. You must add the following dependancy
 
 compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 
+JSON File should be added to the resources folder within the project.
+
 ## Contributing
 Pull requests are welcome!
 
