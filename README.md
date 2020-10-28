@@ -7,14 +7,13 @@ By Mike Jando
 This is a gradle project writting in Java to parse a JSON file and implement a quiz game via the command prompt.
 
 ## Installation
+JSON File should be added to the resources folder within the project.
 
 This project uses the JSON Simple library. You must add the following dependancy to your build.gradle file:
 
 //https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
 
 compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
-
-JSON File should be added to the resources folder within the project.
 
 ## Contributing
 Pull requests are welcome!
