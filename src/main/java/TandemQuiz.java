@@ -39,14 +39,17 @@ public class TandemQuiz
 
             Collections.shuffle(sList);
 
+            System.out.println("Welcome to another game of the Tandem Quiz Challenge!");
+            System.out.println();
+
             System.out.println(question);
             System.out.println();
             for(int j = 0;j<sList.size();j++)
             {
-                System.out.println(j+" "+sList.get(j));
+                System.out.println(j+" - "+sList.get(j));
             }
             System.out.println();
-            System.out.println("What is your guess?");
+            System.out.println("Enter the number for your guess: ");
             while(!kbd.hasNextInt())
             {
                 System.out.println("That was not a valid option, please try again: ");
@@ -67,16 +70,26 @@ public class TandemQuiz
 
 
             if(sList.get(answer)==map.get(asked.get(i)).get("correct"))
+            {
+                System.out.println();
+                System.out.println(map.get(asked.get(i)).get("correct")+" was the correct answer!");
+                System.out.println();
                 score++;
-
-            System.out.println();
-            System.out.println("The correct answer was: "+map.get(asked.get(i)).get("correct"));
-            System.out.println();
+            }
+            else
+                {
+                System.out.println();
+                System.out.println("The correct answer was: " + map.get(asked.get(i)).get("correct"));
+                System.out.println();
+                }
         }
 
         if(score>=5)
             System.out.println("Great Job!  You're score was: " + score);
         else
-            System.out.println("These were some tough ones!  You're score was: " + score);
+            System.out.println("Those were some tough ones!  You're score was: " + score);
+
+        System.out.println();
+        System.out.println("Thanks for playing!");
     }
 }
